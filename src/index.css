@@ -1,4 +1,20 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-in 0.5s backwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
