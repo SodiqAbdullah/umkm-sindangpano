@@ -55,7 +55,7 @@ const Home = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="./assets/papan nama sindangpano.jpg"
+              src="/src/assets/papan nama sindangpano.jpg"
               alt="Desa Sindangpano"
               className="rounded-lg shadow-lg w-full max-w-md h-auto object-cover"
             />
@@ -69,7 +69,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
             <img
-              src="/images/melinjo.jpg"
+              src="..\assets\emping melinjo pedas manis original 2.jpg"
               alt="Olahan Melinjo"
               className="rounded-lg mb-4 w-full h-48 object-cover"
             />
