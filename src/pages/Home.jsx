@@ -1,6 +1,11 @@
 // src/pages/Home.jsx
 import { Helmet } from 'react-helmet-async';
 
+import desaSindangpanoImg from '/src/assets/balai-desa-sindangpano.jpg';
+import papanNama from '/src/assets/papan-nama-sindangpano.jpg';
+import denah from '/src/assets/denah-sindangpano.jpg';
+import empingPedasManis from '/src/assets/emping-melinjo-pedas-manis-original.jpg';
+
 const Home = () => {
   return (
     <>
@@ -15,7 +20,7 @@ const Home = () => {
       <section className="relative h-[calc(100vh-64px)] overflow-hidden pt-10">
         <div className="relative w-full max-w-screen-xl mx-auto h-full">
           <img
-            src="src\assets\balai desa sindangpano.jpg"
+            src={desaSindangpanoImg}
             alt="Foto Desa Sindangpano"
             className="absolute inset-0 w-full h-full object-cover brightness-50"
           />
@@ -35,32 +40,47 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-
+      <br /><br />
       {/* Tentang Kami */}
       <section className="container mx-auto py-16 bg-gray-100">
-        <h2 className="text-3xl font-bold text-left mb-8 text-blue-900">Tentang Kami</h2>
+        <h2 className="text-3xl font-bold text-center md:text-left mb-8 text-blue-900">Tentang Desa</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="text-center md:text-left">
-            <p className="text-lg text-gray-700 mb-4">
-              Desa Sindangpano adalah komunitas yang kaya akan potensi lokal, terutama melalui UMKM yang menghasilkan produk unggulan seperti olahan melinjo, emping, dan buah duku. Kami berkomitmen untuk meningkatkan kesejahteraan masyarakat melalui inovasi dan kerja sama.
-            </p>
-            <a
-              href="/about"
-              className="inline-block bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
-            >
-              Pelajari Lebih Lanjut
-            </a>
-          </div>
           <div className="flex justify-center">
             <img
-              src="/src/assets/papan nama sindangpano.jpg"
+              src={papanNama}
               alt="Desa Sindangpano"
               className="rounded-lg shadow-lg w-full max-w-md h-auto object-cover"
             />
           </div>
+          <div className="text-left">
+            <p className="text-lg text-gray-700 mb-4">
+              Desa Sindangpano merupakan salah satu desa yang berada di wilayah Kecamatan Rajagaluh, Kabupaten Majalengka, Jawa Barat. Secara geografis, wilayah desa ini terdiri dari perbukitan, persawahan, perkebunan melinjo, serta tebing di sepanjang jalan yang telah diaspal pada tahun 2012.
+            </p>
+          </div>
+          <div className="col-span-2 text-left px-20">
+            <p className="text-lg text-gray-700 mb-4">
+              Luas wilayah Desa Sindangpano mencapai 280,35 Ha. Jarak desa ini ke ibu kota provinsi (Bandung) sekitar 113 km, ke ibu kota kabupaten (Majalengka) sekitar 13 km, dan ke ibu kota kecamatan (Rajagaluh) sekitar 6 km. Tofografi dan kontur tanah desa berupa tanah pegunungan dan persawahan, dengan ketinggian 500–600 m dpl serta suhu rata-rata 20 °C – 30 °C.
+            </p>
+          </div>
+          <div className="text-left px-20">
+            <div className="text-left text-lg text-gray-700 space-y-2 mb-4">
+              <p>Batas-batas wilayah Desa Sindangpano adalah:</p>
+              <p>Utara: Desa Sadomas</p>
+              <p>Selatan: Desa Payung</p>
+              <p>Timur: Desa Bataragung (Bantaragung)</p>
+              <p>Barat: Desa Teja</p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src={denah}
+              alt="Desa Sindangpano"
+              className="rounded-lg shadow-lg w-full max-w-md h-auto object-cover"
+            />
+          </div>
+          
         </div>
+        
       </section>
 
       {/* Highlight Produk */}
@@ -69,7 +89,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
             <img
-              src="..\assets\emping melinjo pedas manis original 2.jpg"
+              src={empingPedasManis}
               alt="Olahan Melinjo"
               className="rounded-lg mb-4 w-full h-48 object-cover"
             />
@@ -78,7 +98,7 @@ const Home = () => {
           </div>
           <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
             <img
-              src="/images/emping.jpg"
+              src={empingPedasManis}
               alt="Emping"
               className="rounded-lg mb-4 w-full h-48 object-cover"
             />
@@ -87,7 +107,7 @@ const Home = () => {
           </div>
           <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
             <img
-              src="/images/duku.jpg"
+              src={empingPedasManis}
               alt="Duku"
               className="rounded-lg mb-4 w-full h-48 object-cover"
             />
