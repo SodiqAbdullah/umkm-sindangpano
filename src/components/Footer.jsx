@@ -62,7 +62,7 @@ export default function Footer() {
                     href="tel:+6285743114734"
                     className="text-slate-300 text-sm hover:text-white transition-colors"
                   >
-                    +62 123 456 7890
+                    +62 857 431 14734
                   </a>
                 </div>
               </div>
