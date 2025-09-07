@@ -49,17 +49,17 @@ export default function Footer() {
                 <div className="flex items-center space-x-3 group">
                   <FaEnvelope className="w-5 h-5 text-blue-400 group-hover:text-emerald-400 transition-colors" />
                   <a
-                    href="mailto:info@umkmsindangpano.com"
+                    href="mailto:sodiq.abdullah303@gmail.com"
                     className="text-slate-300 text-sm hover:text-white transition-colors"
                   >
-                    info@umkmsindangpano.com
+                    sodiq.abdullah303@gmail.com
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3 group">
                   <FaPhoneAlt className="w-5 h-5 text-blue-400 group-hover:text-emerald-400 transition-colors" />
                   <a
-                    href="tel:+621234567890"
+                    href="tel:+6285743114734"
                     className="text-slate-300 text-sm hover:text-white transition-colors"
                   >
                     +62 123 456 7890
