@@ -90,7 +90,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/about"
+                    to="/profile"
                     className="text-slate-300 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
                   >
                     Tentang Kami

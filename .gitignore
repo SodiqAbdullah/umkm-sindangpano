@@ -7,10 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
 dist
 dist-ssr
-*.local
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Editor directories and files
 .vscode/*
@@ -23,4 +30,28 @@ dist-ssr
 *.sln
 *.sw?
 
+# Supabase-related files
+.supabase
+
+# Build output
+build
+out
+
+# Framework-specific
+.next
+.nuxt
+.svelte-kit
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Vercel/Netlify deployment
 .vercel
+.netlify
